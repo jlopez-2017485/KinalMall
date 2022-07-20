@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="499.0" prefWidth="905.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.joselopez.controller.HorarioController">
+   <children>
+      <AnchorPane prefHeight="499.0" prefWidth="231.0" style="-fx-background-color: #455a64;">
+         <children>
+            <Pane layoutX="31.0" prefHeight="158.0" prefWidth="170.0" style="-fx-background-color: #FD7640; -fx-background-radius: 0 0 50 50;">
+               <children>
+                  <ImageView fitHeight="137.0" fitWidth="197.0" layoutX="-13.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Horario.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="33.0" layoutY="-2.0" prefHeight="33.0" prefWidth="104.0" text="Horarios">
+                     <font>
+                        <Font name="ARMY RUST" size="28.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <VBox layoutX="7.0" layoutY="158.0" prefHeight="333.0" prefWidth="218.0">
+               <children>
+                  <Button fx:id="btnNuevo" mnemonicParsing="false" onAction="#nuevo" prefHeight="63.0" prefWidth="263.0" styleClass="button1" stylesheets="@../resource/CSSBotonesKinal.css" text="Nuevo" textFill="#f8f4f4">
+                     <graphic>
+                        <ImageView fx:id="imgNuevo" fitHeight="51.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/Agregar.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnEliminar" mnemonicParsing="false" onAction="#eliminar" prefHeight="63.0" prefWidth="232.0" styleClass="button1" stylesheets="@../resource/CSSBotonesKinal.css" text="Eliminar" textFill="#f8f4f4">
+                     <graphic>
+                        <ImageView fx:id="imgEliminar" fitHeight="51.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/Eliminar.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnEditar" mnemonicParsing="false" onAction="#editar" prefHeight="63.0" prefWidth="232.0" styleClass="button1" stylesheets="@../resource/CSSBotonesKinal.css" text="Editar" textFill="#f8f4f4">
+                     <graphic>
+                        <ImageView fx:id="imgEditar" fitHeight="51.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/editar.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnReporte" mnemonicParsing="false" onAction="#reporte" prefHeight="63.0" prefWidth="233.0" styleClass="button1" stylesheets="@../resource/CSSBotonesKinal.css" text="Reporte" textFill="#f8f4f4">
+                     <graphic>
+                        <ImageView fx:id="imgReporte" fitHeight="51.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/reporte.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#menuPrincipal" prefHeight="63.0" prefWidth="222.0" styleClass="button2" stylesheets="@../resource/CSSBotonesKinal.css" textFill="#f8f4f4">
+                     <graphic>
+                        <ImageView fitHeight="80.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/volver.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <Pane layoutX="302.0" layoutY="-16.0" prefHeight="98.0" prefWidth="98.0" style="-fx-background-radius: 40 40 40 40; -fx-background-color: #F9AE90;" />
+      <Pane layoutX="674.0" layoutY="67.0" prefHeight="91.0" prefWidth="88.0" style="-fx-background-radius: 40 40 40 40; -fx-background-color: #F9AE90;" />
+      <Pane layoutX="460.0" layoutY="50.0" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 40 40 40 40; -fx-background-color: #F9AE90;" />
+      <Pane layoutX="644.0" layoutY="322.0" prefHeight="235.0" prefWidth="274.0" rotate="30.1" style="-fx-background-radius: 40 40 40 40; -fx-background-color: #F9AE90;" />
+      <GridPane layoutX="239.0" layoutY="6.0" prefHeight="69.0" prefWidth="656.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Martes" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Century" size="14.0" />
+               </font>
+               <padding>
+                  <Insets left="48.0" />
+               </padding>
+            </Label>
+            <Label text="Entrada" GridPane.columnIndex="2">
+               <font>
+                  <Font name="Century" size="14.0" />
+               </font>
+               <padding>
+                  <Insets left="45.0" />
+               </padding>
+            </Label>
+            <Label text="Salida" GridPane.columnIndex="4">
+               <font>
+                  <Font name="Century" size="14.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Label>
+            <Label text="Lunes" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Century" size="14.0" />
+               </font>
+               <padding>
+                  <Insets left="58.0" />
+               </padding>
+            </Label>
+            <Label text="Código Horario">
+               <font>
+                  <Font name="Century" size="14.0" />
+               </font>
+            </Label>
+            <Label text="Miércoles" GridPane.columnIndex="4" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Century" size="14.0" />
+               </font>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="txtCodigoHorario" editable="false" GridPane.columnIndex="1">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtEntrada" editable="false" GridPane.columnIndex="3">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtSalida" editable="false" GridPane.columnIndex="5">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtLunes" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtMartes" editable="false" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtMiercoles" editable="false" GridPane.columnIndex="5" GridPane.rowIndex="1">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+         </children>
+      </GridPane>
+      <GridPane layoutX="348.0" layoutY="82.0" prefHeight="30.0" prefWidth="459.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Jueves">
+               <font>
+                  <Font name="Century" size="14.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Label>
+            <Label text="Viernes" GridPane.columnIndex="2">
+               <font>
+                  <Font name="Century" size="14.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="txtJueves" editable="false" GridPane.columnIndex="1">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtViernes" editable="false" GridPane.columnIndex="3">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+         </children>
+      </GridPane>
+      <TableView fx:id="tblHorario" layoutX="239.0" layoutY="121.0" prefHeight="373.0" prefWidth="656.0" stylesheets="@../resource/CSSTableView.css">
+        <columns>
+          <TableColumn fx:id="colCodigoHorario" prefWidth="87.0" text="Cod. Horario" />
+          <TableColumn fx:id="colEntrada" prefWidth="95.0" text="Entrada" />
+            <TableColumn fx:id="colSalida" prefWidth="95.0" text="Salida" />
+            <TableColumn fx:id="colLunes" prefWidth="75.0" text="Lunes" />
+            <TableColumn fx:id="colMartes" prefWidth="75.0" text="Martes" />
+            <TableColumn fx:id="colMiercoles" text="Miércoles" />
+            <TableColumn fx:id="colJueves" prefWidth="75.0" text="Jueves" />
+            <TableColumn fx:id="colViernes" prefWidth="73.0" text="Viernes" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

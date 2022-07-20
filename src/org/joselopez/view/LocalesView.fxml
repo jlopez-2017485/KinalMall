@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="533.0" prefWidth="1120.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.joselopez.controller.LocalController">
+   <children>
+      <AnchorPane prefHeight="546.0" prefWidth="231.0" style="-fx-background-color: #455a64;">
+         <children>
+            <Pane layoutX="31.0" prefHeight="158.0" prefWidth="170.0" style="-fx-background-color: #FD7640; -fx-background-radius: 0 0 50 50;">
+               <children>
+                  <ImageView fitHeight="107.0" fitWidth="128.0" layoutX="22.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Locales.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="41.0" layoutY="-2.0" prefHeight="33.0" prefWidth="88.0" text="LOCALES">
+                     <font>
+                        <Font name="ARMY RUST" size="28.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <VBox layoutX="7.0" layoutY="158.0" prefHeight="333.0" prefWidth="218.0">
+               <children>
+                  <Button fx:id="btnNuevo" mnemonicParsing="false" onAction="#nuevo" prefHeight="63.0" prefWidth="224.0" styleClass="button1" stylesheets="@../resource/CSSBotonesKinal.css" text="Nuevo" textFill="#f8f4f4">
+                     <graphic>
+                        <ImageView fx:id="imgNuevo" fitHeight="51.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/Agregar.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Calibri Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnEliminar" mnemonicParsing="false" onAction="#eliminar" prefHeight="63.0" prefWidth="228.0" styleClass="button1" stylesheets="@../resource/CSSBotonesKinal.css" text="Eliminar" textFill="#f8f4f4">
+                     <graphic>
+                        <ImageView fx:id="imgEliminar" fitHeight="51.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/Eliminar.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Calibri Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnEditar" mnemonicParsing="false" onAction="#editar" prefHeight="63.0" prefWidth="234.0" styleClass="button1" stylesheets="@../resource/CSSBotonesKinal.css" text="Editar" textFill="#f8f4f4">
+                     <graphic>
+                        <ImageView fx:id="imgEditar" fitHeight="51.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/editar.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Calibri Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnReporte" mnemonicParsing="false" onAction="#reporte" prefHeight="63.0" prefWidth="225.0" styleClass="button1" stylesheets="@../resource/CSSBotonesKinal.css" text="Reporte" textFill="#f8f4f4">
+                     <graphic>
+                        <ImageView fx:id="imgReporte" fitHeight="51.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/reporte.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Calibri Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#menuPrincipal" prefHeight="63.0" prefWidth="222.0" styleClass="button1" stylesheets="@../resource/CSSBotonesKinal.css" textFill="#f8f4f4">
+                     <graphic>
+                        <ImageView fitHeight="80.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/volver.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <Pane layoutX="387.0" layoutY="54.0" prefHeight="98.0" prefWidth="98.0" style="-fx-background-radius: 40 40 40 40; -fx-background-color: #F9AE90;" />
+      <Pane layoutX="566.0" layoutY="146.0" prefHeight="91.0" prefWidth="88.0" style="-fx-background-radius: 40 40 40 40; -fx-background-color: #F9AE90;" />
+      <Pane layoutX="283.0" layoutY="-17.0" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 40 40 40 40; -fx-background-color: #F9AE90;" />
+      <Pane layoutX="878.0" layoutY="335.0" prefHeight="235.0" prefWidth="274.0" rotate="30.1" style="-fx-background-radius: 40 40 40 40; -fx-background-color: #F9AE90;" />
+      <GridPane layoutX="245.0" layoutY="14.0" prefHeight="50.0" prefWidth="803.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="272.0" minWidth="0.0" prefWidth="98.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="389.0" minWidth="10.0" prefWidth="120.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="641.0" minWidth="10.0" prefWidth="103.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="615.0" minWidth="10.0" prefWidth="144.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="615.0" minWidth="10.0" prefWidth="115.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="615.0" minWidth="10.0" prefWidth="144.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Código Local">
+               <font>
+                  <Font name="Century" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtCodigoLocal" editable="false" prefHeight="30.0" prefWidth="89.0" GridPane.columnIndex="1">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Label prefHeight="18.0" prefWidth="98.0" text="  Saldo a favor" GridPane.columnIndex="2">
+               <font>
+                  <Font name="Century" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtSaldoFavor" editable="false" prefHeight="30.0" prefWidth="89.0" GridPane.columnIndex="3">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Label prefHeight="18.0" prefWidth="109.0" text="  Saldo en contra" GridPane.columnIndex="4">
+               <font>
+                  <Font name="Century" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtSaldoContra" editable="false" prefHeight="30.0" prefWidth="89.0" GridPane.columnIndex="5">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+         </children>
+      </GridPane>
+      <TableView fx:id="tblLocal" layoutX="249.0" layoutY="173.0" prefHeight="341.0" prefWidth="852.0" stylesheets="@../resource/CSSTableView.css">
+        <columns>
+          <TableColumn fx:id="colCodigoLocal" prefWidth="117.0" text="Código Local" />
+            <TableColumn fx:id="colSaldoFavor" prefWidth="117.0" text="Saldo a favor" />
+            <TableColumn fx:id="colSaldoContra" prefWidth="117.0" text="Saldo en contra" />
+          <TableColumn fx:id="colMesesPend" prefWidth="117.0" text="Meses Pendientes" />
+            <TableColumn fx:id="colDisponibilidad" prefWidth="100.0" text="Disponibilidad" />
+            <TableColumn fx:id="colValorLocal" prefWidth="134.0" text="Valor del Local" />
+            <TableColumn fx:id="colValorAdmin" prefWidth="147.0" text="Valor de Administración" />
+        </columns>
+      </TableView>
+      <Label layoutX="242.0" layoutY="79.0" text="Meses Pendientes">
+         <font>
+            <Font name="Century" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtMesesPend" editable="false" layoutX="369.0" layoutY="73.0" prefHeight="30.0" prefWidth="89.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="485.0" layoutY="79.0" text="Disponibilidad">
+         <font>
+            <Font name="Century" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtDisponibilidad" editable="false" layoutX="602.0" layoutY="73.0" prefHeight="30.0" prefWidth="89.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="721.0" layoutY="79.0" text="Valor del Local">
+         <font>
+            <Font name="Century" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtValorLocal" editable="false" layoutX="846.0" layoutY="76.0">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <Label layoutX="443.0" layoutY="130.0" text="Valor de Administración">
+         <font>
+            <Font name="Century" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtValorAdmin" editable="false" layoutX="624.0" layoutY="124.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>

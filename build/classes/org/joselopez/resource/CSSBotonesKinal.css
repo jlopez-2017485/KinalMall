@@ -1,0 +1,59 @@
+.button1
+{
+    -fx-background-color:  #455a64;
+    -fx-background-radius: 20 20 20 20;
+}
+
+.button1:hover
+{
+    -fx-background-color:  #FD7640;
+    -fx-background: 50 0 50 0;
+}
+
+.button1:pressed
+{
+    -fx-background-color:  #F9AE90;
+    -fx-background-radius: 50 0 50 0;
+}
+
+.button2
+{
+    -fx-background-color: #455a64;
+    -fx-background-radius: 10 10 10 10;
+}
+
+.button2:hover
+{
+    -fx-background-color: #89BCF9;
+    -fx-background-radius: 10 10 10 10;
+}
+
+.button2:pressed
+{
+    -fx-background-color: #99C7FE;
+    -fx-background-radius: 10 10 10 10;
+}
+
+/*.button3
+{
+    -fx-background-color: #C5DDFA;
+    -fx-background-radius: 10 10 20 10;
+}
+
+.button3:hover
+{
+    -fx-background-color: #6B9CD6;
+    -fx-background-radius: 10 10 20 10;
+}
+
+.button3:pressed
+{
+    -fx-background-color: #E8E8E8;
+    -fx-background-radius: 05 05 15 05;
+}
+
+.AnchorPane
+{
+    -fx-background-color: #89BCF9;
+    -fx-background-radius: 15 15 15 15;
+}*/

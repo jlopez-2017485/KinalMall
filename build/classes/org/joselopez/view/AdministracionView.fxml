@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="499.0" prefWidth="1065.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.joselopez.controller.AdministracionController">
+   <children>
+      <AnchorPane prefHeight="499.0" prefWidth="231.0" style="-fx-background-color: #455a64;">
+         <children>
+            <Pane layoutX="31.0" prefHeight="158.0" prefWidth="170.0" style="-fx-background-color: #FD7640; -fx-background-radius: 0 0 50 50;">
+               <children>
+                  <ImageView fitHeight="107.0" fitWidth="128.0" layoutX="32.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Administracion.png" />
+                     </image></ImageView>
+                  <Label layoutX="1.0" layoutY="-2.0" text="Administración">
+                     <font>
+                        <Font name="ARMY RUST" size="28.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <VBox layoutX="7.0" layoutY="158.0" prefHeight="333.0" prefWidth="218.0">
+               <children>
+                  <Button fx:id="btnNuevo" mnemonicParsing="false" onAction="#nuevo" prefHeight="63.0" prefWidth="218.0" styleClass="button1" stylesheets="@../resource/CSSBotonesKinal.css" text="Nuevo" textFill="#f8f4f4">
+                     <graphic>
+                        <ImageView fx:id="imgNuevo" fitHeight="51.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/Agregar.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Calibri Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnEliminar" mnemonicParsing="false" onAction="#eliminar" prefHeight="63.0" prefWidth="218.0" styleClass="button1" stylesheets="@../resource/CSSBotonesKinal.css" text="Eliminar" textFill="#f8f4f4">
+                     <graphic>
+                        <ImageView fx:id="imgEliminar" fitHeight="51.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/Eliminar.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Calibri Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnEditar" mnemonicParsing="false" onAction="#editar" prefHeight="63.0" prefWidth="218.0" styleClass="button1" stylesheets="@../resource/CSSBotonesKinal.css" text="Editar" textFill="#f8f4f4">
+                     <graphic>
+                        <ImageView fx:id="imgEditar" fitHeight="51.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/editar.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Calibri Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnReporte" mnemonicParsing="false" onAction="#reporte" prefHeight="63.0" prefWidth="218.0" styleClass="button1" stylesheets="@../resource/CSSBotonesKinal.css" text="Reporte" textFill="#f8f4f4">
+                     <graphic>
+                        <ImageView fx:id="imgReporte" fitHeight="51.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/reporte.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Calibri Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#menuPrincipal" prefHeight="80.0" prefWidth="218.0" styleClass="button2" stylesheets="@../resource/CSSBotonesKinal.css">
+                     <graphic>
+                        <ImageView fitHeight="80.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/volver.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <Pane layoutX="801.0" layoutY="339.0" prefHeight="235.0" prefWidth="274.0" rotate="30.1" style="-fx-background-radius: 40 40 40 40; -fx-background-color: #F9AE90;" />
+      <Pane layoutX="522.0" layoutY="3.0" prefHeight="98.0" prefWidth="98.0" style="-fx-background-radius: 40 40 40 40; -fx-background-color: #F9AE90;" />
+      <Pane layoutX="761.0" layoutY="71.0" prefHeight="91.0" prefWidth="88.0" style="-fx-background-radius: 40 40 40 40; -fx-background-color: #F9AE90;" />
+      <Pane layoutX="595.0" layoutY="92.0" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 40 40 40 40; -fx-background-color: #F9AE90;" />
+      <GridPane layoutX="249.0" layoutY="14.0" prefHeight="63.0" prefWidth="802.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="222.0" minWidth="10.0" prefWidth="153.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="389.0" minWidth="10.0" prefWidth="115.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="186.0" minWidth="0.0" prefWidth="86.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="450.0" minWidth="10.0" prefWidth="447.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Código Administración">
+               <font>
+                  <Font name="Century" size="14.0" />
+               </font>
+            </Label>
+            <Label prefWidth="90.0" text="Dirección" GridPane.columnIndex="2">
+               <font>
+                  <Font name="Century" size="14.0" />
+               </font>
+               <padding>
+                  <Insets left="7.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="txtDireccion" editable="false" GridPane.columnIndex="3">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtCodigoAdmin" editable="false" GridPane.columnIndex="1">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+         </children>
+      </GridPane>
+      <Label layoutX="381.0" layoutY="77.0" text="Teléfono">
+         <font>
+            <Font name="Century" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtTelefono" editable="false" layoutX="445.0" layoutY="71.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TableView fx:id="tblAdmin" layoutX="249.0" layoutY="123.0" onKeyReleased="#seleccionarElemento" onMouseClicked="#seleccionarElemento" prefHeight="368.0" prefWidth="802.0" stylesheets="@../resource/CSSTableView.css">
+        <columns>
+          <TableColumn fx:id="colCodigoAdmin" prefWidth="146.0" text="Código Administración" />
+          <TableColumn fx:id="colDireccion" prefWidth="505.0" text="Dirección" />
+            <TableColumn fx:id="colTelefono" prefWidth="150.0" text="Teléfono" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
